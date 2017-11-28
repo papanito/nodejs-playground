@@ -48,8 +48,8 @@ setTimeout(function() { consolelog("timer 10ms has ended") }, 10)
 setImmediate(function() { consolelog("immediate") })
 
 console.log(readFileSynchronous("test.txt") + " (1. call)")
+readFileAsynchronous("test.txt", data => console.log(data + " (callback)"))
 console.log(readFileSynchronous("test.txt") + " (2. call)")
-console.log(readFileAsynchronous("test.txt", data => console.log(data)))
 
 for (let i = 0; i < 4; i++) { 
     consoleLogWait("Synchronous call #" + i + " then wait 100ms", 100)
