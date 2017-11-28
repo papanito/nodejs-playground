@@ -47,8 +47,9 @@ setTimeout(function() { consolelog("timer 5s has ended") }, 5000)
 setTimeout(function() { consolelog("timer 10ms has ended") }, 10)
 setImmediate(function() { consolelog("immediate") })
 
+readFileAsynchronous("test.txt", data => console.log(data + " (not cached)"))
 console.log(readFileSynchronous("test.txt") + " (1. call)")
-readFileAsynchronous("test.txt", data => console.log(data + " (callback)"))
+readFileAsynchronous("test.txt", data => console.log(data + " (cached)"))
 console.log(readFileSynchronous("test.txt") + " (2. call)")
 
 for (let i = 0; i < 4; i++) { 
