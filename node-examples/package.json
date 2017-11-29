@@ -1,0 +1,14 @@
+{
+  "name": "node-examples",
+  "version": "0.0.1",
+  "description": "my node examples with some arbitrary scripts",
+  "main": "callback.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "math-expression-evaluator": "^1.2.17"
+  }
+}
