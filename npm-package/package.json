@@ -1,0 +1,19 @@
+{
+  "name": "dummy-console-log",
+  "version": "1.0.0",
+  "description": "my first npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/papanito/nodejs-playground.git"
+  },
+  "author": "Papanito <papanito@wyssmann.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/papanito/nodejs-playground/issues"
+  },
+  "homepage": "https://github.com/papanito/nodejs-playground#readme"
+}
